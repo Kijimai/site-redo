@@ -1,0 +1,63 @@
+// Colors
+$color-black: 0 0% 0%;
+$color-white: 0 100% 100%;
+
+$color-grey-1: 0 0% 15%;
+$color-grey-2: 0 0% 35%;
+$color-grey-3: 0 0% 50%;
+
+$color-primary-orange: 39 79% 54%;
+$color-primary-purple: 199 100% 25%;
+
+// Fonts
+$default-font-size: 1.6rem;
+$primary-font: "Poppins";
+$sub-font: "Work Sans";
+
+// Gap
+
+$gap-2: 2rem;
+$gap-4: 4rem;
+$gap-6: 6rem;
+$gap-8: 8rem;
+
+:root {
+}
+
+.dark-theme {
+  --color-page-background: #{$color-grey-1};
+  --color-text: #{$color-white};
+  --container-bg: #{$color-grey-3};
+}
+
+.light-theme {
+  --color-page-background: #{$color-white};
+  --color-text: #{$color-black};
+  --container-bg: #{$color-grey-1};
+}
+
+// .dark-theme {
+//   --color-bg: 222 14% 18%;
+//   --toggle-btn-clr: 0 0% 100%; /* DONE !*/
+//   --color-font: 0 0% 100%; /* DONE !*/
+//   --color-primary: 39 79% 54%; /* DONE !*/
+//   --nav-bg: 0 0% 10%; /* DONE !*/
+//   --color-nav-btn-bg: hsl(0, 0%, 67%);
+//   --project-bg-color: 0 100% 100%;
+//   --project-bg-link: 0 0% 25%;
+//   --project-bg-font: 0 100% 100%;
+//   --project-font-color: 0 0% 25%;
+// }
+
+// .light-theme {
+//   --color-bg: 0 0% 95%;
+//   --toggle-btn-clr: 222 14% 18%; /* DONE !*/
+//   --color-font: 222 14% 18%; /* DONE !*/
+//   --color-primary: 199 100% 25%; /* DONE !*/
+//   --nav-bg: 0 0% 100%; /* DONE !*/
+//   --color-nav-btn-bg: hsl(218, 7%, 31%);
+//   --project-bg-color: 0 0% 25%;
+//   --project-bg-link: 0 100% 100%;
+//   --project-bg-font: 0 0% 25%;
+//   --project-font-color: 0 100% 100%;
+// }

@@ -1,0 +1,29 @@
+.navigator {
+  position: relative;
+
+  &__btn-container {
+    background-color: salmon;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  &__toggle-btn {
+    cursor: pointer;
+    &__icon {
+      color: hsl(var(--font-color));
+    }
+  }
+}
+
+.nav {
+  &__nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__link {
+    color: hsl(var(--font-color));
+    font-size: 2rem;
+    text-decoration: none;
+  }
+}

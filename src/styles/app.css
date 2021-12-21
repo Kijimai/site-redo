@@ -1,0 +1,86 @@
+.dark-theme {
+  --color-page-background: 0 0% 15%;
+  --color-text: 0 100% 100%;
+  --container-bg: 0 0% 50%;
+}
+
+.light-theme {
+  --color-page-background: 0 100% 100%;
+  --color-text: 0 0% 0%;
+  --container-bg: 0 0% 15%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /*Automatically inherits what is specified by on the later border-box*/
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: hsl(var(--color-page-background));
+}
+
+ul {
+  list-style: none;
+}
+
+.navigator {
+  position: relative;
+}
+.navigator__btn-container {
+  background-color: salmon;
+  height: 5rem;
+  width: 5rem;
+}
+.navigator__toggle-btn {
+  cursor: pointer;
+}
+.navigator__toggle-btn__icon {
+  color: hsl(var(--font-color));
+}
+
+.nav__nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.nav__link {
+  color: hsl(var(--font-color));
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+}
+.header__left {
+  width: 40%;
+}
+.header__left p {
+  font-size: 2rem;
+}
+.header__left h3 {
+  font-size: 3rem;
+}
+.header__left h1 {
+  font-size: 7rem;
+  line-height: 0.8;
+}
+.header__left h1 span {
+  display: block;
+  font-size: 4rem;
+}
+.header__right {
+  justify-self: flex-start;
+}
+
+/*# sourceMappingURL=app.css.map */

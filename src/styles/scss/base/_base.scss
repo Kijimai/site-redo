@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /*Automatically inherits what is specified by on the later border-box*/
+}
+
+html {
+  //this defines what 1rem is -- 10px
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: hsl(var(--color-page-background));
+}
+
+ul {
+  list-style: none;
+}

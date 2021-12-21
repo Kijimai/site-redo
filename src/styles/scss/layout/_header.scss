@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: "Work Sans", sans-serif;
+
+  &__left {
+    width: 40%;
+    p {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+
+    h1 {
+      font-size: 7rem;
+      line-height: 0.8;
+      span {
+        display: block;
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &__right {
+    justify-self: flex-start;
+  }
+}
