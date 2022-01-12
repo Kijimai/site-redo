@@ -1,7 +1,7 @@
 import React from "react"
 import ProfileImg from "../images/Profile-Image.png"
 import ProfileImgSmall from "../images/Profile-Image-sm.png"
-
+import {FaHandPointer} from "react-icons/fa"
 const Header = () => {
   return (
     <header className="header">

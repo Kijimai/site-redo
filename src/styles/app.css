@@ -5,7 +5,7 @@
   --color-grey-2: 0 0% 35%;
   --color-grey-3: 0 0% 50%;
   --color-primary-orange: 39 79% 54%;
-  --color-primary-purple: 199 100% 25%;
+  --color-primary-purple: 275 90% 42%;
   --default-font-size: 1.6rem;
   --primary-font: "Poppins";
   --sub-font: "Work Sans";
@@ -15,12 +15,16 @@
   --color-page-background: var(--color-grey-1);
   --color-text: var(--color-white);
   --container-bg: var(--color-grey-3);
+  --color-primary: var(--color-primary-orange);
+  --nav-bg: var(--color-grey-2);
 }
 
 .light-theme {
   --color-page-background: var(--color-white);
   --color-text: var(--color-black);
   --container-bg: var(--color-grey-1);
+  --color-primary: var(--color-primary-purple);
+  --nav-bg: var(--color-black);
 }
 
 *,
@@ -29,7 +33,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  transition: color 0.2s ease, background-color 0.2s ease;
+  transition: color 0.1s ease, background-color 0.2s ease;
   /*Automatically inherits what is specified by on the later border-box*/
 }
 
@@ -38,6 +42,7 @@ html {
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   background-color: hsl(var(--color-page-background));
 }
@@ -58,11 +63,18 @@ h6 {
 .navigator {
   position: relative;
 }
+.navigator__btn-container, .navigator__toggle-btn {
+  position: absolute;
+  top: 4rem;
+  z-index: 100;
+}
 .navigator__btn-container {
+  left: 1rem;
   height: 5rem;
   width: 5rem;
 }
 .navigator__toggle-btn {
+  right: 2rem;
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -71,20 +83,47 @@ h6 {
   color: hsl(var(--color-text));
 }
 
+.nav.active .nav__nav-links {
+  background-color: green !important;
+  height: 100vh;
+  width: 100%;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
 .nav__nav-links {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  background-color: hsl(var(--nav-bg));
+  color: hsl(var(--color-text));
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 .nav__link {
   color: hsl(var(--color-text));
-  font-size: 2rem;
+  font-size: 4rem;
+  font-family: var(--sub-font);
+  text-transform: uppercase;
   text-decoration: none;
+}
+.nav__link:hover {
+  color: hsl(var(--color-primary));
 }
 
 .header {
   display: flex;
-  width: 70%;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 90%;
   font-family: "Work Sans", sans-serif;
+  color: hsl(var(--color-text));
 }
 .header__left {
   width: 40%;

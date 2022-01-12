@@ -7,8 +7,7 @@ import NavBurger from "./NavBurger"
 const Navigator = () => {
   const navLinks = ["about", "skills", "projects", "contact"]
 
-  const { navActive, toggleTheme, closeNav, theme } =
-    useGlobalContext()
+  const { navActive, toggleTheme, closeNav, theme } = useGlobalContext()
 
   return (
     <div className="navigator">
@@ -17,7 +16,7 @@ const Navigator = () => {
       </div>
       <button
         aria-label="theme toggle button"
-        className={`navigator__toggle-btn ${navActive && "active"}`}
+        className={`navigator__toggle-btn`}
         onClick={toggleTheme}
       >
         <IconContext.Provider
@@ -26,21 +25,19 @@ const Navigator = () => {
           {theme === "dark-theme" ? <FaLightbulb /> : <FaRegLightbulb />}
         </IconContext.Provider>
       </button>
-      <nav className="nav">
+      <nav className={`nav ${navActive && "active"}`}>
         <ul className="nav__nav-links">
           {navLinks.map((link, index) => {
             return (
               <li key={index}>
-                <a className="nav__link" href={`#${link}`}>
+                <a className="nav__link" href={`#${link}`} onClick={closeNav}>
                   {link}
                 </a>
               </li>
             )
           })}
         </ul>
-        <ul className="nav__social-links">
-
-        </ul>
+        <ul className="nav__social-links"></ul>
       </nav>
     </div>
   )
