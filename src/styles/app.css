@@ -1,13 +1,26 @@
+:root {
+  --color-black: 0 0% 0%;
+  --color-white: 0 100% 100%;
+  --color-grey-1: 0 0% 15%;
+  --color-grey-2: 0 0% 35%;
+  --color-grey-3: 0 0% 50%;
+  --color-primary-orange: 39 79% 54%;
+  --color-primary-purple: 199 100% 25%;
+  --default-font-size: 1.6rem;
+  --primary-font: "Poppins";
+  --sub-font: "Work Sans";
+}
+
 .dark-theme {
-  --color-page-background: 0 0% 15%;
-  --color-text: 0 100% 100%;
-  --container-bg: 0 0% 50%;
+  --color-page-background: var(--color-grey-1);
+  --color-text: var(--color-white);
+  --container-bg: var(--color-grey-3);
 }
 
 .light-theme {
-  --color-page-background: 0 100% 100%;
-  --color-text: 0 0% 0%;
-  --container-bg: 0 0% 15%;
+  --color-page-background: var(--color-white);
+  --color-text: var(--color-black);
+  --container-bg: var(--color-grey-1);
 }
 
 *,
@@ -16,6 +29,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  transition: color 0.2s ease, background-color 0.2s ease;
   /*Automatically inherits what is specified by on the later border-box*/
 }
 
@@ -32,11 +46,19 @@ ul {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font), sans-serif;
+}
+
 .navigator {
   position: relative;
 }
 .navigator__btn-container {
-  background-color: salmon;
   height: 5rem;
   width: 5rem;
 }
@@ -59,7 +81,7 @@ ul {
 
 .header {
   display: flex;
-  justify-content: center;
+  width: 70%;
   font-family: "Work Sans", sans-serif;
 }
 .header__left {

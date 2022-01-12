@@ -2,28 +2,18 @@ import React, { useState } from "react"
 import { useGlobalContext } from "../utils/context"
 import { FaLightbulb, FaRegLightbulb } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
+import NavBurger from "./NavBurger"
 
 const Navigator = () => {
   const navLinks = ["about", "projects", "contact"]
 
-  const { handleNav, navActive, toggleTheme, closeNav, theme } =
+  const { navActive, toggleTheme, closeNav, theme } =
     useGlobalContext()
 
   return (
     <div className="navigator">
       <div className="navigator__btn-container">
-        <button
-          aria-label="close button"
-          onClick={handleNav}
-          className={`navigator__btn hamburger hamburger--elastic ${
-            navActive && "is-active"
-          } `}
-          type="button"
-        >
-          <span aria-hidden="true" className="hamburger-box">
-            <span aria-hidden="true" className="hamburger-inner"></span>
-          </span>
-        </button>
+        <NavBurger />
       </div>
       <button
         aria-label="theme toggle button"

@@ -30,7 +30,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: hsl(var(--toggle-btn-clr));
+  background-color: hsl(var(--color-text));
   /* background-color: var(--color-nav-btn-bg); */
 }
 
@@ -51,7 +51,7 @@
 .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: hsl(var(--toggle-btn-clr));
+  background-color: hsl(var(--color-text));
   border-radius: 4px;
   position: absolute;
   transition-property: transform;

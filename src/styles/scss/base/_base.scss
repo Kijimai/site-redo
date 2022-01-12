@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  transition: color 0.2s ease, background-color 0.2s ease;
   /*Automatically inherits what is specified by on the later border-box*/
 }
 
@@ -19,4 +20,13 @@ body {
 
 ul {
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font), sans-serif;
 }
