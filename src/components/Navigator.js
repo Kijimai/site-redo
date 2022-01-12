@@ -5,7 +5,7 @@ import { IconContext } from "react-icons/lib"
 import NavBurger from "./NavBurger"
 
 const Navigator = () => {
-  const navLinks = ["about", "projects", "contact"]
+  const navLinks = ["about", "skills", "projects", "contact"]
 
   const { navActive, toggleTheme, closeNav, theme } =
     useGlobalContext()
@@ -21,9 +21,9 @@ const Navigator = () => {
         onClick={toggleTheme}
       >
         <IconContext.Provider
-          value={{ size: "5rem", className: "toggle-btn__icon" }}
+          value={{ size: "5rem", className: "navigator__toggle-btn__icon" }}
         >
-          {theme === "toggle-btn" ? <FaLightbulb /> : <FaRegLightbulb />}
+          {theme === "dark-theme" ? <FaLightbulb /> : <FaRegLightbulb />}
         </IconContext.Provider>
       </button>
       <nav className="nav">
@@ -37,6 +37,9 @@ const Navigator = () => {
               </li>
             )
           })}
+        </ul>
+        <ul className="nav__social-links">
+
         </ul>
       </nav>
     </div>
