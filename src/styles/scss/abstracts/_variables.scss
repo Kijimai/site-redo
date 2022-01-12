@@ -2,6 +2,7 @@
   // Colors
   --color-black: 0 0% 0%;
   --color-white: 0 100% 100%;
+  --color-off-white: 0 0% 79%;
 
   --color-grey-1: 0 0% 15%;
   --color-grey-2: 0 0% 35%;
@@ -29,7 +30,5 @@
   --color-text: var(--color-black);
   --container-bg: var(--color-grey-1);
   --color-primary: var(--color-primary-purple);
-  --nav-bg: var(--color-black);
+  --nav-bg: var(--color-off-white);
 }
-
-
