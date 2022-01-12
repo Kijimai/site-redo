@@ -1,16 +1,30 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
   min-height: 100vh;
   width: 90%;
-  // justify-content: center;
   font-family: "Work Sans", sans-serif;
   color: hsl(var(--color-text));
+
+  @include responsive(600) {
+    width: 80%;
+  }
+
+  @include responsive(900) {
+    width: 70%;
+  }
+
+  & > * {
+    flex: 0 1 40rem;
+  }
+
   &__left {
     width: 40%;
     p {
-      font-size: 2rem;
+      margin-top: 0.5rem;
+      font-size: 1.8rem;
     }
 
     h3 {
@@ -18,11 +32,12 @@
     }
 
     h1 {
-      font-size: 7rem;
-      line-height: 0.8;
+      font-size: 4rem;
+      line-height: 1;
       span {
         display: block;
-        font-size: 4rem;
+        line-height: 0.9;
+        font-size: 2rem;
       }
     }
   }

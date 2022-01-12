@@ -1,0 +1,8 @@
+.about {
+  &__description {
+    font-family: var(--sub-font);
+    font-size: 2.2rem;
+    color: hsl(var(--color-text));
+    text-align: justify;
+  }
+}

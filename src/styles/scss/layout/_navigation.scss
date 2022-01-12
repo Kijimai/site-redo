@@ -28,12 +28,15 @@
 
 .nav {
   &.active .nav__nav-links {
+    user-select: initial;
+    pointer-events: initial;
     height: 100vh;
     opacity: 1;
   }
 
   &__nav-links {
     user-select: none;
+    pointer-events: none;
     position: absolute;
     opacity: 0;
     top: 0;

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useGlobalContext } from "../utils/context"
+import { useGlobalContext } from "../../utils/context"
 import { FaLightbulb, FaRegLightbulb } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
 import NavBurger from "./NavBurger"
@@ -37,7 +37,6 @@ const Navigator = () => {
             )
           })}
         </ul>
-        <ul className="nav__social-links"></ul>
       </nav>
     </div>
   )

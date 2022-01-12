@@ -61,6 +61,21 @@ h6 {
   font-family: var(--primary-font), sans-serif;
 }
 
+.section {
+  margin: 0 auto;
+  width: 90%;
+}
+@media only screen and (min-width: 37.5em) {
+  .section {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .section {
+    width: 70%;
+  }
+}
+
 .navigator {
   position: relative;
 }
@@ -85,11 +100,14 @@ h6 {
 }
 
 .nav.active .nav__nav-links {
+  user-select: initial;
+  pointer-events: initial;
   height: 100vh;
   opacity: 1;
 }
 .nav__nav-links {
   user-select: none;
+  pointer-events: none;
   position: absolute;
   opacity: 0;
   top: 0;
@@ -119,31 +137,54 @@ h6 {
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
   min-height: 100vh;
   width: 90%;
   font-family: "Work Sans", sans-serif;
   color: hsl(var(--color-text));
 }
+@media only screen and (min-width: 37.5em) {
+  .header {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .header {
+    width: 70%;
+  }
+}
+.header > * {
+  flex: 0 1 40rem;
+}
 .header__left {
   width: 40%;
 }
 .header__left p {
-  font-size: 2rem;
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
 }
 .header__left h3 {
   font-size: 3rem;
 }
 .header__left h1 {
-  font-size: 7rem;
-  line-height: 0.8;
+  font-size: 4rem;
+  line-height: 1;
 }
 .header__left h1 span {
   display: block;
-  font-size: 4rem;
+  line-height: 0.9;
+  font-size: 2rem;
 }
 .header__right {
   justify-self: flex-start;
+}
+
+.about__description {
+  font-family: var(--sub-font);
+  font-size: 2.2rem;
+  color: hsl(var(--color-text));
+  text-align: justify;
 }
 
 /*# sourceMappingURL=app.css.map */
