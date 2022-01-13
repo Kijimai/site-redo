@@ -16,9 +16,18 @@ const Projects = () => {
             <div className="project__contents">
               <h2 className="project__title">{project.title}</h2>
               <p className="project__description">{project.description}</p>
+              <ul className="project__tech-stacks">
+                {project.stack.map((item) => (
+                  <li className="stack">{item}</li>
+                ))}
+              </ul>
               <div className="project__links">
-                <a href={project.liveUrl}>Live Site</a>
-                <a href={project.codeUrl}>View Code</a>
+                <a className="project__link" href={project.liveUrl}>
+                  Live Site
+                </a>
+                <a className="project__link" href={project.codeUrl}>
+                  View Code
+                </a>
               </div>
             </div>
           </article>

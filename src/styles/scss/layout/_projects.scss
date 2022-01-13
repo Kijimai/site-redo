@@ -1,13 +1,11 @@
 .section-projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  justify-items: center;
   flex-direction: column;
   gap: 2rem;
 
   @include responsive(600) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -15,24 +13,19 @@
   max-width: min(100%, 35rem);
   overflow: hidden;
   background-color: hsl(var(--container-bg));
-  color: hsl(var(--color-text));
   border-radius: 0.5rem;
   transition: 0.2s ease transform, 0.3s ease box-shadow;
 
   &:hover {
-    transform: translateY(-0.4rem);
+    transform: translateY(-0.2rem);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
-  }
-
-  @include responsive(1200) {
-    display: flex;
-    max-width: min(100%, 65rem);
   }
 
   &__img {
     display: block;
     width: 100%;
-
+    height: 100%;
+    object-fit: cover;
     @include responsive(1200) {
       min-width: 30rem;
     }
@@ -44,9 +37,18 @@
     gap: 1rem;
     padding: 2rem;
 
+    @include responsive(900) {
+      gap: 2rem;
+    }
+
     & > * {
       flex: 0 1 100%;
     }
+  }
+
+  &__title,
+  &__description {
+    color: hsl(var(--color-text));
   }
 
   &__title {
@@ -58,6 +60,44 @@
     font-family: var(--sub-font);
   }
 
+  &__tech-stacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--sub-font);
+    color: hsl(var(--color-text));
+
+    .stack {
+      background-color: hsl(var(--color-primary));
+      padding: 1rem;
+      border-radius: 0.3rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
   &__link {
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: hsl(var(--color-primary));
+    font-size: 1.4rem;
+    font-family: var(--sub-font);
+    text-decoration: none;
+    background-color: hsl(var(--project-link-bg));
+    padding: 1rem;
+    white-space: nowrap;
+    transform: translateY(-0.4rem);
+    transition: transform 0.1s ease;
+
+    &:hover {
+      transform: translateY(0);
+    }
   }
 }

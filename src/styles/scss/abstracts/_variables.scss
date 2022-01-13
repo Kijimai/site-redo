@@ -20,15 +20,17 @@
 .dark-theme {
   --color-page-background: var(--color-grey-1);
   --color-text: var(--color-white);
-  --container-bg: var(--color-grey-3);
+  --container-bg: var(--color-grey-2);
   --color-primary: var(--color-primary-orange);
   --nav-bg: var(--color-grey-2);
+  --project-link-bg: var(--color-grey-1);
 }
 
 .light-theme {
   --color-page-background: var(--color-white);
   --color-text: var(--color-black);
-  --container-bg: var(--color-grey-1);
+  --container-bg: var(--color-off-white);
   --color-primary: var(--color-primary-purple);
   --nav-bg: var(--color-off-white);
+  --project-link-bg: var(--color-white);
 }
