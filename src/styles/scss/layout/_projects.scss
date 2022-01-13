@@ -1,0 +1,49 @@
+.section-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include responsive(600) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.project {
+  max-width: min(100%, 25rem);
+  overflow: hidden;
+  background-color: hsl(var(--container-bg));
+  color: hsl(var(--color-text));
+  border-radius: 0.5rem;
+  transition: 0.2s ease transform, 0.3s ease box-shadow;
+  &:hover {
+    transform: translateY(-0.4rem);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__contents {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+
+    & > * {
+      flex: 1 1 100%;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    font-family: var(--sub-font);
+  }
+}

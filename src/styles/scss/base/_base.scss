@@ -33,7 +33,7 @@ h6 {
 }
 
 .section {
-  margin: 0 auto;
+  margin: 0 auto 4rem;
   width: 90%;
 
   @include responsive(600) {

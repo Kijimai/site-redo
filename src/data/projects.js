@@ -1,3 +1,5 @@
+import MoUPreview from "../images/MoU-preview-sm.jpg"
+
 const Projs = [
   {
     title: "Project 1",
@@ -6,6 +8,7 @@ const Projs = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius ratione ad similique, quibusdam inventore possimus explicabo. Saepe odit aliquam distinctio quis quasi necessitatibus magnam!",
     stack: ["HTML", "CSS", "Javascript", "React"],
+    imgUrl: MoUPreview,
   },
   {
     title: "Project 2",
@@ -14,6 +17,7 @@ const Projs = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius ratione ad similique, quibusdam inventore possimus explicabo. Saepe odit aliquam distinctio quis quasi necessitatibus magnam!",
     stack: ["HTML", "CSS", "Javascript", "React"],
+    imgUrl: MoUPreview,
   },
   {
     title: "Project 3",
@@ -22,6 +26,7 @@ const Projs = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius ratione ad similique, quibusdam inventore possimus explicabo. Saepe odit aliquam distinctio quis quasi necessitatibus magnam!",
     stack: ["HTML", "CSS", "Javascript", "React"],
+    imgUrl: MoUPreview,
   },
   {
     title: "Project 4",
@@ -30,6 +35,7 @@ const Projs = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius ratione ad similique, quibusdam inventore possimus explicabo. Saepe odit aliquam distinctio quis quasi necessitatibus magnam!",
     stack: ["HTML", "CSS", "Javascript", "React"],
+    imgUrl: MoUPreview,
   },
 ]
 

@@ -10,7 +10,7 @@ const Navigator = () => {
   const { navActive, toggleTheme, closeNav, theme } = useGlobalContext()
 
   return (
-    <div className="navigator">
+    <div className={`navigator ${navActive ? "active" : ""}`}>
       <div className="navigator__btn-container">
         <NavBurger />
       </div>
