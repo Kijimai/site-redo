@@ -2,10 +2,10 @@ import React from "react"
 import projects from "../../data/projects"
 const Projects = () => {
   return (
-    <section className="section section-projects">
+    <section className="section section-projects" id="projects">
       {projects.map((project, index) => {
         return (
-          <article className="project">
+          <article key={index} className="project">
             <div className="project__img-container">
               <img
                 src={project.imgUrl}

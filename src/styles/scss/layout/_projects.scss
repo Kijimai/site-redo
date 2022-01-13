@@ -12,19 +12,30 @@
 }
 
 .project {
-  max-width: min(100%, 25rem);
+  max-width: min(100%, 35rem);
   overflow: hidden;
   background-color: hsl(var(--container-bg));
   color: hsl(var(--color-text));
   border-radius: 0.5rem;
   transition: 0.2s ease transform, 0.3s ease box-shadow;
+
   &:hover {
     transform: translateY(-0.4rem);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
   }
 
+  @include responsive(1200) {
+    display: flex;
+    max-width: min(100%, 65rem);
+  }
+
   &__img {
+    display: block;
     width: 100%;
+
+    @include responsive(1200) {
+      min-width: 30rem;
+    }
   }
 
   &__contents {
@@ -34,7 +45,7 @@
     padding: 2rem;
 
     & > * {
-      flex: 1 1 100%;
+      flex: 0 1 100%;
     }
   }
 
@@ -45,5 +56,8 @@
   &__description {
     font-size: 1.4rem;
     font-family: var(--sub-font);
+  }
+
+  &__link {
   }
 }

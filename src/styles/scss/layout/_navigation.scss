@@ -14,12 +14,25 @@
     position: absolute;
     top: 4rem;
     z-index: 100;
+
+    @media only screen and (max-height: 23.5em) {
+      top: 1rem;
+    }
   }
 
   &__btn-container {
     left: 1rem;
     height: 5rem;
     width: 5rem;
+
+    @media only screen and (max-height: 23.5em) {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    @include responsive(900) {
+      display: none;
+    }
   }
 
   &__toggle-btn {
@@ -35,7 +48,7 @@
 }
 
 .nav {
-  &.active .nav__nav-links {
+  &.active &__nav-links {
     user-select: initial;
     pointer-events: initial;
     height: 100vh;
@@ -59,17 +72,49 @@
     align-items: center;
     gap: 1rem;
     transition: all 0.2s ease;
+
+    @include responsive(900) {
+      user-select: initial;
+      pointer-events: initial;
+      position: relative;
+      top: 4rem;
+      gap: 2rem;
+      height: auto;
+      opacity: 1;
+      background-color: transparent;
+      flex-direction: row;
+    }
   }
 
   &__link {
+    position: relative;
     color: hsl(var(--color-text));
     font-size: 4rem;
     font-family: var(--sub-font);
     text-transform: uppercase;
     text-decoration: none;
 
+    @include responsive(900) {
+      font-size: 2.6rem;
+    }
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      height: 0.3rem;
+      width: 0;
+      background-color: hsl(var(--color-primary));
+      transition: width 0.2s ease-in-out;
+    }
+
     &:hover {
       color: hsl(var(--color-primary));
+
+      &::before {
+        width: 100%;
+      }
     }
   }
 }

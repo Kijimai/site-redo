@@ -18,6 +18,10 @@
 
   & > * {
     flex: 0 1 40rem;
+
+    @include verticalResponsive(414) {
+      flex: 0 1;
+    }
   }
 
   &__left {
