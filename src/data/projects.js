@@ -1,4 +1,4 @@
-import MoUPreview from "../images/MoU-preview-sm.jpg"
+import MoUPreview from "../images/MoUPreview.jpg"
 
 const Projs = [
   {
@@ -29,7 +29,7 @@ const Projs = [
     imgUrl: MoUPreview,
   },
   {
-    title: "Project 4",
+    title: "Masters of Unlocking",
     liveUrl: "#",
     codeUrl: "#",
     description:

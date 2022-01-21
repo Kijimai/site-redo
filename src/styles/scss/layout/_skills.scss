@@ -1,0 +1,41 @@
+.skills {
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: hsl(var(--container-bg));
+    color: hsl(var(--color-text));
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 80rem;
+    @include responsive(600) {
+      flex-direction: row;
+      padding: 2rem;
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 4rem;
+    font-size: 1.6rem;
+
+    svg {
+      font-size: 3rem;
+    }
+  }
+
+  &__list {
+    font-family: var(--sub-font);
+  }
+}
+
+.divider {
+  display: block;
+  border: 0.1rem solid hsl(var(--color-text));
+  transition: border 0.2s ease;
+}

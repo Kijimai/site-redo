@@ -1,7 +1,8 @@
 import React from "react"
 import ProfileImg from "../../images/Profile-Image.png"
 import ProfileImgSmall from "../../images/Profile-Image-sm.png"
-import { FaHandPointer } from "react-icons/fa"
+import { FaHandPointer, FaAngleDown } from "react-icons/fa"
+import { IconContext } from "react-icons/lib"
 
 const Header = () => {
   return (
@@ -20,6 +21,16 @@ const Header = () => {
           sizes="(max-width: 900px) 150px, 250px"
           alt="self portrait"
         />
+      </div>
+      <div className="header__bottom">
+        <a href="#about">
+          Get to know me!
+          <IconContext.Provider
+            value={{ size: "2em", className: "down-arrow" }}
+          >
+            <FaAngleDown />
+          </IconContext.Provider>
+        </a>
       </div>
     </header>
   )

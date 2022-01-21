@@ -8,6 +8,11 @@
   /*Automatically inherits what is specified by on the later border-box*/
 }
 
+*::selection {
+  color: hsl(var(--color-white));
+  background-color: hsl(var(--text-selection));
+}
+
 html {
   //this defines what 1rem is -- 10px
   font-size: 62.5%;
@@ -19,6 +24,18 @@ body {
   box-sizing: border-box;
   background-color: hsl(var(--color-page-background));
   min-width: 28rem;
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: hsl(var(--color-track));
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(var(--color-thumb));
 }
 
 ul {
@@ -34,7 +51,7 @@ h6 {
   font-family: var(--primary-font), sans-serif;
 }
 
-.section {
+.inner-container {
   margin: 0 auto 4rem;
   width: 90%;
 

@@ -3,7 +3,7 @@ import React from "react"
 const About = () => {
   return (
     <section className="section section-about" id="about">
-      <div className="about">
+      <div className="inner-container">
         <p class="about__description">
           Back in 2020 I graduated from San Francisco State University with a
           degree in Fine Art and Animation, but due to the pandemic, I had to
