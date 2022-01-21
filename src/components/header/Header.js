@@ -13,16 +13,6 @@ const Header = () => {
           <span>My name is</span>John Deen Bucog
         </h1>
         <p>I'm a Frontend Developer</p>
-      </div>
-      <div className="header__right">
-        <img
-          className="self-portrait"
-          srcSet={`${ProfileImg} 250w, ${ProfileImgSmall} 150w`}
-          sizes="(max-width: 900px) 150px, 250px"
-          alt="self portrait"
-        />
-      </div>
-      <div className="header__bottom">
         <a href="#about">
           Get to know me!
           <IconContext.Provider
@@ -31,6 +21,14 @@ const Header = () => {
             <FaAngleDown />
           </IconContext.Provider>
         </a>
+      </div>
+      <div className="header__right">
+        <img
+          className="self-portrait"
+          srcSet={`${ProfileImg} 250w, ${ProfileImgSmall} 150w`}
+          sizes="(max-width: 900px) 150px, 250px"
+          alt="self portrait"
+        />
       </div>
     </header>
   )
