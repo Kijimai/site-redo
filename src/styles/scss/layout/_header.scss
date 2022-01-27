@@ -64,7 +64,13 @@
   }
 
   &__right {
+    height: 100%;
     justify-self: flex-start;
+
+    .self-portrait {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 

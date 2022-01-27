@@ -4,10 +4,11 @@ import { FaCode, FaBookOpen } from "react-icons/fa"
 const Skills = () => {
   return (
     <section className="section skills" id="skills">
+      <h2 className="skills__header">My Skillset</h2>
       <div className="inner-container">
         <div className="skills__container">
           <FaCode />
-          <h2>Languages</h2>
+          <h3>Languages</h3>
           <ul className="skills__list">
             <li className="skills__skill">HTML5</li>
             <li className="skills__skill">CSS/SCSS</li>
@@ -18,7 +19,7 @@ const Skills = () => {
         <div aria-hidden="true" className="divider"></div>
         <div className="skills__container">
           <FaBookOpen />
-          <h2>Dev Tools</h2>
+          <h3>Dev Tools</h3>
           <ul className="skills__list">
             <li className="skills__skill">NPM</li>
             <li className="skills__skill">Git/Github</li>

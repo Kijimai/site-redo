@@ -49,3 +49,10 @@
     }
   }
 }
+
+@mixin sectionHeaderStyle {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  text-align: center;
+  color: hsl(var(--color-text));
+}

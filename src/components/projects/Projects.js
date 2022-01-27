@@ -2,7 +2,8 @@ import React from "react"
 import projects from "../../data/projects"
 const Projects = () => {
   return (
-    <section className="section section-projects" id="projects">
+    <section className="section section-projects projects" id="projects">
+      <h2 className="projects__header">Projects</h2>
       <div className="inner-container">
         {projects.map((project, index) => {
           return (
@@ -18,8 +19,10 @@ const Projects = () => {
                 <h2 className="project__title">{project.title}</h2>
                 <p className="project__description">{project.description}</p>
                 <ul className="project__tech-stacks">
-                  {project.stack.map((item) => (
-                    <li className="stack">{item}</li>
+                  {project.stack.map((item, index) => (
+                    <li key={index} className="stack">
+                      {item}
+                    </li>
                   ))}
                 </ul>
                 <div className="project__links">

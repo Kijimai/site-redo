@@ -5,8 +5,7 @@
   }
 
   &__header {
-    font-size: 3rem;
-    color: hsl(var(--color-text));
+    @include sectionHeaderStyle;
   }
 
   &__description {
