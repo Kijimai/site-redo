@@ -11,12 +11,9 @@ const About = () => {
             the chance to be a problem solver with creative solutions. When I'm
             not drawing, I'm turning beautiful designs into websites. Frontend
             development is where I truly thrive.  */}
-            I am a frontend focused web developer that enjoys turning beautiful designs into beautiful websites.
-            I have created several 
-            
-            
-            
-            "I'm a Frontend Web Developer
+            I'm a self taught frontend web developer that enjoys turning
+            beautiful designs into beautiful websites. I also enjoy collaborating with others and sharing my knowledge in order to learn 
+            {/* "I'm a Frontend Web Developer
             building the Front-end of Websites and Web Applications that leads
             to the success of the overall product. Check out some of my work in
             the Projects section. I also like sharing content related to the
@@ -25,7 +22,7 @@ const About = () => {
             Follow me on my Linkedin where I post useful content related to Web
             Development and Programming I'm open to Job opportunities where I
             can contribute, learn and grow. If you have a good opportunity that
-            matches my skills and experience then don't hesitate to contact me."
+            matches my skills and experience then don't hesitate to contact me." */}
             {/* Back in 2020 I graduated from San Francisco State University with a
             degree in Fine Art and Animation, but due to the pandemic, I had to
             retrace my steps and reconsider my situation. I had a very
