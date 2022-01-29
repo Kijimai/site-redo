@@ -1,0 +1,75 @@
+.contact {
+  &__header {
+    @include sectionHeaderStyle;
+  }
+
+  .inner-container {
+    max-width: 80rem;
+  }
+
+  &__form-container {
+    border-radius: 0.5rem;
+    background-color: hsl(var(--color-primary));
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+
+    @include responsive(600) {
+      width: 80%;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    padding: 1rem 2rem;
+
+    @include responsive(600) {
+      padding: 3rem 4rem;
+    }
+  }
+
+  button {
+    width: 100%;
+    cursor: pointer;
+    padding: 2rem 0;
+  }
+}
+
+.form-group {
+  color: hsl(var(--color-text));
+  margin-bottom: 1rem;
+
+  @include responsive(600) {
+    margin-bottom: 3rem;
+  }
+
+  & > * {
+    display: block;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+  }
+
+  input {
+    width: 100%;
+    padding: 1rem 0.5rem;
+
+    @include responsive(600) {
+      padding: 2rem 1rem;
+    }
+  }
+
+  label {
+    font-size: 1.6rem;
+    font-family: var(--sub-font);
+    margin-bottom: 0.5rem;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 1rem;
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react"
 import projects from "../../data/projects"
+
 const Projects = () => {
   return (
     <section className="section section-projects projects" id="projects">

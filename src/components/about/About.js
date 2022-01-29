@@ -1,18 +1,23 @@
 import React from "react"
-
+import headerItem2 from "../../images/Asset-2.svg"
 const About = () => {
   return (
     <section className="section about" id="about">
-      <div className="inner-container">
+      <h2 className="about__header">Who am I?</h2>
+      <div className="inner-container flex">
+        <div className="about__image-container">
+          <img src={headerItem2} alt="..." className="about__image" />
+        </div>
         <div className="about__container">
-          <h2 className="about__header">Who am I?</h2>
           <p className="about__description">
             {/* I have equal love for both coding and drawing. Each one offers me
             the chance to be a problem solver with creative solutions. When I'm
             not drawing, I'm turning beautiful designs into websites. Frontend
             development is where I truly thrive.  */}
             I'm a self taught frontend web developer that enjoys turning
-            beautiful designs into beautiful websites. I also enjoy collaborating with others and sharing my knowledge in order to learn 
+            beautiful designs into beautiful websites. I also enjoy
+            collaborating with others and sharing my knowledge in order to learn
+            from one another.
             {/* "I'm a Frontend Web Developer
             building the Front-end of Websites and Web Applications that leads
             to the success of the overall product. Check out some of my work in

@@ -3,7 +3,7 @@ import ProfileImg from "../../images/Profile-Image.png"
 import ProfileImgSmall from "../../images/Profile-Image-sm.png"
 import { FaHandPointer, FaAngleDown } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
-
+import headerItem1 from "../../images/Asset-1.svg"
 const Header = () => {
   return (
     <header className="header">
@@ -23,12 +23,13 @@ const Header = () => {
         </a>
       </div>
       <div className="header__right">
-        <img
+        {/* <img
           className="self-portrait"
           srcSet={`${ProfileImg} 250w, ${ProfileImgSmall} 150w`}
           sizes="(max-width: 900px) 150px, 250px"
           alt="self portrait"
-        />
+        /> */}
+        <img className="self-portrait" src={headerItem1} alt="..." />
       </div>
     </header>
   )

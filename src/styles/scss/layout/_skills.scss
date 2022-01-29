@@ -1,6 +1,19 @@
 .skills {
+  &__top {
+    margin-bottom: 2rem;
+  }
+
   &__header {
     @include sectionHeaderStyle;
+  }
+
+  &__description {
+    margin: 0 auto;
+    max-width: 40rem;
+    text-align: center;
+    font-size: 2rem;
+    color: hsl(var(--color-text));
+    font-family: var(--sub-font);
   }
 
   .inner-container {

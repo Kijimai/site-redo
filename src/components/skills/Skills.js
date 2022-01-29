@@ -4,7 +4,13 @@ import { FaCode, FaBookOpen } from "react-icons/fa"
 const Skills = () => {
   return (
     <section className="section skills" id="skills">
-      <h2 className="skills__header">My Skillset</h2>
+      <div className="skills__top">
+        <h2 className="skills__header">My Skillset</h2>
+        <p className="skills__description">
+          I'm always trying to learn something new, so as time goes on this list
+          will expand with my ever increasing skillset.
+        </p>
+      </div>
       <div className="inner-container">
         <div className="skills__container">
           <FaCode />
