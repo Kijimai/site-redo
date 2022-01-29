@@ -671,7 +671,60 @@ textarea {
 }
 
 .footer {
+  font-family: var(--sub-font);
+  padding: 8rem 0;
   background-color: hsl(var(--color-black));
+  color: hsl(var(--color-white));
+}
+.footer .inner-container {
+  margin-bottom: 0;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.footer__top h3 {
+  font-size: 1.8rem;
+}
+.footer__top .description {
+  font-size: 1.4rem;
+}
+.footer__top-left, .footer__top-right {
+  flex-direction: column;
+  flex: 100%;
+}
+.footer__top-left {
+  gap: 1rem;
+}
+.footer__top-right {
+  align-items: flex-end;
+  gap: 1rem;
+}
+.footer__top-right .links {
+  font-size: 3rem;
+}
+.footer__top-right .links a {
+  color: hsl(var(--color-white));
+  transition: color 0.2s ease;
+}
+.footer__top-right .links a:hover {
+  color: hsl(var(--color-primary));
+}
+.footer .links {
+  justify-content: center;
+  gap: 1rem;
+}
+.footer__bottom {
+  text-align: center;
+  border-top: 0.2rem solid hsl(var(--color-white));
+}
+.footer__bottom div {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+.footer__bottom div p {
+  margin-top: 0.4rem;
+}
+.footer__bottom div a {
   color: hsl(var(--color-white));
 }
 
