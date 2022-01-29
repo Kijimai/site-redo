@@ -368,6 +368,7 @@ textarea {
   font-size: 1.6rem;
   color: hsl(var(--color-text));
   text-align: left;
+  line-height: 1.2;
 }
 @media only screen and (min-width: 37.5em) {
   .about__description {
@@ -377,6 +378,7 @@ textarea {
 @media only screen and (min-width: 56.25em) {
   .about__description {
     font-size: 2rem;
+    line-height: 1.4;
   }
 }
 
@@ -622,6 +624,8 @@ textarea {
   width: 100%;
   cursor: pointer;
   padding: 2rem 0;
+  font-weight: 600;
+  font-family: var(--primary-font);
 }
 
 .form-group {
@@ -643,11 +647,15 @@ textarea {
 .form-group input {
   width: 100%;
   padding: 1rem 0.5rem;
+  font-family: var(--sub-font);
 }
 @media only screen and (min-width: 37.5em) {
   .form-group input {
-    padding: 2rem 1rem;
+    padding: 1.4rem 0.8rem;
   }
+}
+.form-group input[type=text], .form-group input[type=email] {
+  font-size: 1.6rem;
 }
 .form-group label {
   font-size: 1.6rem;
@@ -655,8 +663,16 @@ textarea {
   margin-bottom: 0.5rem;
 }
 .form-group textarea {
+  font-size: 1.6rem;
+  font-family: var(--sub-font);
   width: 100%;
+  height: 20rem;
   padding: 1rem;
+}
+
+.footer {
+  background-color: hsl(var(--color-black));
+  color: hsl(var(--color-white));
 }
 
 /*# sourceMappingURL=app.css.map */
