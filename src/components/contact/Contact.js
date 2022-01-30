@@ -1,6 +1,17 @@
-import React from "react"
+import React, { useState } from "react"
 
 const Contact = () => {
+  const [] = useState({
+    from_name: '',
+    from_email: '',
+    message: ''
+  })
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    
+  } 
+
   return (
     <section className="section contact" id="contact">
       <div className="inner-container">

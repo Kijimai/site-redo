@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react"
+import React, { useState, useEffect, useLayoutEffect, useContext } from "react"
 
 const AppContext = React.createContext()
 
@@ -24,7 +24,7 @@ const AppProvider = ({ children }) => {
   const [theme, setTheme] = useState(getStorageTheme())
   const [navActive, setNavActive] = useState(false)
   const [windowSize, setWindowSize] = useState(window.innerWidth)
-  const [scrollHeight, setScrollHeight] = useState(window.scrollHeight)
+  const [scrollHeight, setScrollHeight] = useState(0)
   const [title, setTitle] = useState(titlesArr[0])
 
   const toggleTheme = () => {
@@ -53,13 +53,8 @@ const AppProvider = ({ children }) => {
     setNavActive(false)
   }
 
-  const checkWindowSize = () => {
-    setWindowSize(window.innerWidth)
-  }
-
-  // const checkScrolLHeight = () => {
-  //   setScrollHeight(window.clientHeight)
-  //   console.log(scrollHeight)
+  // const checkWindowSize = () => {
+  //   setWindowSize(window.innerWidth)
   // }
 
   const scrollToTop = () => {
@@ -72,12 +67,12 @@ const AppProvider = ({ children }) => {
     localStorage.setItem("theme", theme)
   }, [theme])
 
-  useEffect(() => {
-    window.addEventListener("resize", checkWindowSize)
-    return () => {
-      window.removeEventListener("resize", checkWindowSize)
-    }
-  }, [])
+  // useEffect(() => {
+  //   window.addEventListener("resize", checkWindowSize)
+  //   return () => {
+  //     window.removeEventListener("resize", checkWindowSize)
+  //   }
+  // }, [])
 
   useEffect(() => {
     if (windowSize > 768) {
@@ -85,9 +80,14 @@ const AppProvider = ({ children }) => {
     }
   }, [windowSize])
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", checkScrolLHeight)
-  // }, [])
+  useLayoutEffect(() => {
+    const checkScrolLHeight = () => {
+      setScrollHeight(window.pageYOffset)
+    }
+    window.removeEventListener("scroll", checkScrolLHeight)
+    window.addEventListener("scroll", checkScrolLHeight, { passive: true })
+    return () => window.removeEventListener("scroll", checkScrolLHeight)
+  }, [])
 
   return (
     <AppContext.Provider
@@ -105,6 +105,7 @@ const AppProvider = ({ children }) => {
         scrollToTop,
         cycleTitles,
         title,
+        scrollHeight,
       }}
     >
       {children}

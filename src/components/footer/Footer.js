@@ -3,12 +3,16 @@ import { FaGithub, FaLinkedin, FaCodepen } from "react-icons/fa"
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+  }
+
   return (
     <footer className="footer">
       <div className="inner-container flex">
         <div className="footer__top flex">
           <div className="footer__top-left flex">
-            <h3>John Deen Bucog</h3>
+            <h3 onClick={scrollToTop}>John Deen Bucog</h3>
             <p className="description">
               Frontend Web Developer based in Sacramento.
             </p>
@@ -53,7 +57,7 @@ const Footer = () => {
           <div>
             <small>&copy; Copyright {currentYear}</small>
             <p>
-              Site lovingly made by me. &nbsp;
+              Site lovingly made by me ❤ &nbsp;
               <a
                 title="Personal github profile"
                 href="https://github.com/Kijimai"

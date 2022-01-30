@@ -119,3 +119,57 @@
     }
   }
 }
+
+// =============================
+// SIDENAV
+// =============================
+
+.sidenav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 4rem;
+
+  &__links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+  }
+
+  &__list-item {
+    transition: 0.2s ease transform;
+  }
+
+  &__list-item:hover {
+    transform: translateX(1rem);
+  }
+  &__top-btn,
+  &__link {
+    font-size: 1.6rem;
+    font-family: var(--sub-font);
+    color: hsl(var(--color-text));
+    text-decoration: none;
+  }
+
+  &__top-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
+  @include responsive(768) {
+    display: block;
+  }
+}
+.side-contact {
+  position: fixed;
+  bottom: 0;
+  right: 4rem;
+}
+
+.list-line {
+  height: 12rem;
+  width: 0.1rem;
+  display: block;
+  background-color: hsl(var(--color-text));
+}

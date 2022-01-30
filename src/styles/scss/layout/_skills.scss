@@ -41,6 +41,9 @@
     text-align: center;
     padding: 1rem 4rem;
     font-size: 1.6rem;
+    @include responsive(600) {
+      width: 50%;
+    }
 
     h3 {
       font-size: 2rem;

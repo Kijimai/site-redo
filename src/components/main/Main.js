@@ -6,6 +6,8 @@ import Skills from "../skills/Skills"
 import Projects from "../projects/Projects"
 import Contact from "../contact/Contact"
 import Footer from "../footer/Footer"
+import Sidebars from "../sidebars/Sidebars"
+
 const Main = () => {
   return (
     <main>
@@ -16,6 +18,7 @@ const Main = () => {
       <Projects />
       <Contact />
       <Footer />
+      <Sidebars />
     </main>
   )
 }

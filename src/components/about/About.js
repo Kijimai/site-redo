@@ -1,12 +1,16 @@
 import React from "react"
-import headerItem2 from "../../images/Asset-2.svg"
+import headerItem2 from "../../images/fixed.svg"
 const About = () => {
   return (
     <section className="section about" id="about">
       <h2 className="about__header">Who am I?</h2>
       <div className="inner-container flex">
         <div className="about__image-container">
-          <img src={headerItem2} alt="..." className="about__image" />
+          <img
+            src={headerItem2}
+            alt="about me self portrait"
+            className="about__image"
+          />
         </div>
         <div className="about__container">
           <p className="about__description">
