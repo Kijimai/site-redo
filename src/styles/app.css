@@ -243,16 +243,21 @@ textarea {
   align-items: center;
   gap: 1.4rem;
 }
-.sidenav__list-item {
+.sidenav__top-btn, .sidenav__list-item {
+  transform: translateX(0);
   transition: 0.2s ease transform;
 }
-.sidenav__list-item:hover {
+.sidenav__top-btn:hover, .sidenav__list-item:hover {
+  color: hsl(var(--color-primary));
   transform: translateX(1rem);
+}
+.sidenav__link:hover {
+  color: hsl(var(--color-primary));
 }
 .sidenav__top-btn, .sidenav__link {
   font-size: 1.6rem;
   font-family: var(--sub-font);
-  color: hsl(var(--color-text));
+  color: hsl(var(--color-grey-3));
   text-decoration: none;
 }
 .sidenav__top-btn {
@@ -267,16 +272,22 @@ textarea {
 }
 
 .side-contact {
+  display: none;
   position: fixed;
   bottom: 0;
   right: 4rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .side-contact {
+    display: block;
+  }
 }
 
 .list-line {
   height: 12rem;
   width: 0.1rem;
   display: block;
-  background-color: hsl(var(--color-text));
+  background-color: hsl(var(--color-grey-3));
 }
 
 .header {

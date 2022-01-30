@@ -53,9 +53,9 @@ const AppProvider = ({ children }) => {
     setNavActive(false)
   }
 
-  // const checkWindowSize = () => {
-  //   setWindowSize(window.innerWidth)
-  // }
+  const checkWindowSize = () => {
+    setWindowSize(window.innerWidth)
+  }
 
   const scrollToTop = () => {
     closeNav()
@@ -67,12 +67,12 @@ const AppProvider = ({ children }) => {
     localStorage.setItem("theme", theme)
   }, [theme])
 
-  // useEffect(() => {
-  //   window.addEventListener("resize", checkWindowSize)
-  //   return () => {
-  //     window.removeEventListener("resize", checkWindowSize)
-  //   }
-  // }, [])
+  useEffect(() => {
+    window.addEventListener("resize", checkWindowSize)
+    return () => {
+      window.removeEventListener("resize", checkWindowSize)
+    }
+  }, [])
 
   useEffect(() => {
     if (windowSize > 768) {
@@ -80,14 +80,6 @@ const AppProvider = ({ children }) => {
     }
   }, [windowSize])
 
-  useLayoutEffect(() => {
-    const checkScrolLHeight = () => {
-      setScrollHeight(window.pageYOffset)
-    }
-    window.removeEventListener("scroll", checkScrolLHeight)
-    window.addEventListener("scroll", checkScrolLHeight, { passive: true })
-    return () => window.removeEventListener("scroll", checkScrolLHeight)
-  }, [])
 
   return (
     <AppContext.Provider
