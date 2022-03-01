@@ -36,6 +36,10 @@ const AppProvider = ({ children }) => {
     })
   }
 
+  const trackHeight = () => {
+    setScrollHeight(window.scrollY)
+  }
+
   function cycleTitles() {
     const randomNum = Math.floor(Math.random() * titlesArr.length)
 
@@ -63,6 +67,13 @@ const AppProvider = ({ children }) => {
   }
 
   useEffect(() => {
+    window.addEventListener("scroll", trackHeight)
+    return () => {
+      window.removeEventListener("scroll", trackHeight)
+    }
+  })
+
+  useEffect(() => {
     document.documentElement.className = theme
     localStorage.setItem("theme", theme)
   }, [theme])
@@ -79,7 +90,6 @@ const AppProvider = ({ children }) => {
       setNavActive(false)
     }
   }, [windowSize])
-
 
   return (
     <AppContext.Provider

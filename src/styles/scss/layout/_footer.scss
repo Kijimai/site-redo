@@ -39,8 +39,8 @@
 
       a {
         color: hsl(var(--color-white));
-        transition: color 0.2s ease;
-        
+        transition: color 0s;
+
         &:hover {
           color: hsl(var(--color-primary));
         }

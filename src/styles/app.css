@@ -562,7 +562,7 @@ textarea {
   transition: 0.2s ease transform, 0.3s ease box-shadow;
 }
 .project:hover {
-  transform: translateY(-0.2rem);
+  transform: translateY(-0.05rem);
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
 }
 .project__img {
@@ -766,7 +766,7 @@ textarea {
 }
 .footer__top-right .links a {
   color: hsl(var(--color-white));
-  transition: color 0.2s ease;
+  transition: color 0s;
 }
 .footer__top-right .links a:hover {
   color: hsl(var(--color-primary));

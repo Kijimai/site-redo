@@ -30,7 +30,7 @@
   transition: 0.2s ease transform, 0.3s ease box-shadow;
 
   &:hover {
-    transform: translateY(-0.2rem);
+    transform: translateY(-0.05rem);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
   }
 

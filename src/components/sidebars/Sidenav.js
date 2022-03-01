@@ -6,16 +6,15 @@ const navLinks = ["about", "skills", "projects", "contact"]
 const Sidenav = () => {
   const { scrollHeight } = useGlobalContext()
 
-  // if (scrollHeight > 700) {
-  //   console.log("we are here!")
-  // }
-
   const scrollToTop = () => {
     window.scrollTo(0, 0)
   }
 
   return (
-    <nav className="sidenav">
+    <nav
+      className="sidenav"
+      style={{ display: `${scrollHeight >= 900 ? "block" : "none"}` }}
+    >
       <ul className="sidenav__links flex">
         <li>
           <button className="sidenav__top-btn" onClick={scrollToTop}>
