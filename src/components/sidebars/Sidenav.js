@@ -11,10 +11,7 @@ const Sidenav = () => {
   }
 
   return (
-    <nav
-      className="sidenav"
-      style={{ display: `${scrollHeight >= 900 ? "block" : "none"}` }}
-    >
+    <nav className={`sidenav ${scrollHeight > 900 && "active"}`}>
       <ul className="sidenav__links flex">
         <li>
           <button className="sidenav__top-btn" onClick={scrollToTop}>

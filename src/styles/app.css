@@ -233,10 +233,22 @@ textarea {
 }
 
 .sidenav {
-  display: none;
   position: fixed;
   bottom: 0;
   left: 4rem;
+  transition: opacity 0.3s ease;
+}
+.sidenav.active {
+  display: block;
+  opacity: 1;
+}
+@media only screen and (max-width: 768px) {
+  .sidenav.active {
+    display: none;
+  }
+}
+.sidenav.false {
+  opacity: 0;
 }
 .sidenav__links {
   flex-direction: column;
@@ -264,11 +276,6 @@ textarea {
   cursor: pointer;
   border: none;
   background-color: transparent;
-}
-@media only screen and (min-width: 37.5em) {
-  .sidenav {
-    display: block;
-  }
 }
 
 .side-contact {
