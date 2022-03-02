@@ -6,7 +6,7 @@ const Sidecontact = () => {
 
   return (
     <div className="side-contact">
-      <div className="list -line"></div>
+      <div className="list-line"></div>
     </div>
   )
 }

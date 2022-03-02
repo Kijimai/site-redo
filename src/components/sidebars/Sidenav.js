@@ -20,7 +20,7 @@ const Sidenav = () => {
         </li>
         {navLinks.map((nav, index) => {
           return (
-            <li className="sidenav__list-item">
+            <li key={index} className="sidenav__list-item">
               <a className="sidenav__link" href={`#${nav}`}>
                 {nav}
               </a>
