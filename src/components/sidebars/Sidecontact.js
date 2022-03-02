@@ -5,7 +5,8 @@ const Sidecontact = () => {
   const { scrollHeight } = useGlobalContext()
 
   return (
-    <div className="side-contact">
+    <div className={`side-contact ${scrollHeight > 900 && "active"}`}>
+      <button>Contact me!</button>
       <div className="list-line"></div>
     </div>
   )

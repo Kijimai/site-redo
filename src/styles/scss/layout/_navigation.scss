@@ -141,6 +141,8 @@
 
   &.false {
     opacity: 0;
+    user-select: none;
+    pointer-events: none;
   }
 
   &__links {
@@ -181,10 +183,20 @@
 }
 
 .side-contact {
-  display: none;
   position: fixed;
   bottom: 0;
   right: 4rem;
+  transition: 0.3s opacity ease;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &.false {
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+  }
 
   @include responsive(768) {
     display: block;
