@@ -6,7 +6,9 @@ const Sidecontact = () => {
 
   return (
     <div className={`side-contact ${scrollHeight > 900 && "active"}`}>
-      <button>Contact me!</button>
+      <a title="Send me an email" href="mailto:jdbucog@yahoo.com">
+        Contact me!
+      </a>
       <div className="list-line"></div>
     </div>
   )

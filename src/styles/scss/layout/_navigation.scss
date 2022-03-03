@@ -134,7 +134,7 @@
     display: block;
     opacity: 1;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 900px) {
       display: none;
     }
   }
@@ -190,6 +190,10 @@
 
   &.active {
     opacity: 1;
+
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
   }
 
   &.false {
@@ -198,12 +202,31 @@
     pointer-events: none;
   }
 
+  a {
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: hsl(var(--color-grey-3));
+    font-family: var(--sub-font);
+    font-size: 1.6rem;
+    transform: translateY(-325%) rotate(90deg);
+    transition: 0.3s ease color, 0.3s ease transform;
+
+    &:hover {
+      color: hsl(var(--color-primary));
+      transform: translateY(-375%) rotate(90deg);
+    }
+  }
+
   @include responsive(768) {
     display: block;
   }
 }
 
 .list-line {
+  margin: 0 auto;
   height: 12rem;
   width: 0.1rem;
   display: block;

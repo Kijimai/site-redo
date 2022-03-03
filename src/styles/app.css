@@ -242,7 +242,7 @@ textarea {
   display: block;
   opacity: 1;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .sidenav.active {
     display: none;
   }
@@ -289,10 +289,31 @@ textarea {
 .side-contact.active {
   opacity: 1;
 }
+@media only screen and (max-width: 900px) {
+  .side-contact.active {
+    display: none;
+  }
+}
 .side-contact.false {
   opacity: 0;
   user-select: none;
   pointer-events: none;
+}
+.side-contact a {
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: hsl(var(--color-grey-3));
+  font-family: var(--sub-font);
+  font-size: 1.6rem;
+  transform: translateY(-325%) rotate(90deg);
+  transition: 0.3s ease color, 0.3s ease transform;
+}
+.side-contact a:hover {
+  color: hsl(var(--color-primary));
+  transform: translateY(-375%) rotate(90deg);
 }
 @media only screen and (min-width: 37.5em) {
   .side-contact {
@@ -301,6 +322,7 @@ textarea {
 }
 
 .list-line {
+  margin: 0 auto;
   height: 12rem;
   width: 0.1rem;
   display: block;
@@ -676,6 +698,13 @@ textarea {
 }
 .contact .inner-container {
   max-width: 80rem;
+}
+.contact__description {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: var(--sub-font);
+  color: hsl(var(--color-text));
+  margin-bottom: 1.4rem;
 }
 .contact__form-container {
   border-radius: 0.5rem;

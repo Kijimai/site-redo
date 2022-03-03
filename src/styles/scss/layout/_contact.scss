@@ -7,6 +7,14 @@
     max-width: 80rem;
   }
 
+  &__description {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: var(--sub-font);
+    color: hsl(var(--color-text));
+    margin-bottom: 1.4rem;
+  }
+
   &__form-container {
     border-radius: 0.5rem;
     background-color: hsl(var(--color-primary));
