@@ -6,8 +6,8 @@ const Projs = [
     liveUrl: "https://github-user-searcher-kijimai.netlify.app/",
     codeUrl: "https://github.com/Kijimai/fem-github-search",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius ratione ad similique, quibusdam inventore possimus explicabo. Saepe odit aliquam distinctio quis quasi necessitatibus magnam!",
-    stack: ["HTML", "CSS", "Javascript", "React"],
+      "A minimalistic web app built in React that utilizes the github API to pull a user's basic information like displaying repository count and follower counts. I've also integrated a dark / light mode that saves the user's preferences on the next visit. The original design was created by Frontend Mentor and all of the coding was done by me.",
+    stack: ["React", "Sass", "Axios"],
     imgUrl: MoUPreview,
   },
   {
@@ -16,7 +16,7 @@ const Projs = [
     codeUrl: "https://github.com/Kijimai/loopstudios-react",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius ratione ad similique, quibusdam inventore possimus explicabo. Saepe odit aliquam distinctio quis quasi necessitatibus magnam!",
-    stack: ["HTML", "CSS", "Javascript", "React"],
+    stack: ["React", "Sass"],
     imgUrl: MoUPreview,
   },
   {
@@ -25,7 +25,7 @@ const Projs = [
     codeUrl: "https://github.com/Kijimai/tip-calculator-app",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius ratione ad similique, quibusdam inventore possimus explicabo. Saepe odit aliquam distinctio quis quasi necessitatibus magnam!",
-    stack: ["HTML", "CSS", "Javascript", "React"],
+    stack: ["HTML", "CSS", "Javascript"],
     imgUrl: MoUPreview,
   },
   {

@@ -49,6 +49,7 @@
     flex-direction: column;
     gap: 1rem;
     padding: 2rem;
+    flex: 1;
 
     @include responsive(900) {
       gap: 2rem;
