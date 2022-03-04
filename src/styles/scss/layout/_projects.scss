@@ -47,6 +47,7 @@
   &__contents {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 1rem;
     padding: 2rem;
     flex: 1;
@@ -56,7 +57,7 @@
     }
 
     & > * {
-      flex: 0 1 100%;
+      flex: 1 1 50%;
     }
   }
 

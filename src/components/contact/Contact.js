@@ -41,7 +41,12 @@ const Contact = () => {
           I love working with others so any opportunity to do so is very
           welcome! Send me a message and we can talk about something together.
         </p>
-        <div className="contact__form-container flex">
+        <div className="contact__link-container">
+          <a href="mailto:jdbucog@yahoo.com" className="contact__link">
+            Shoot me an email! <span className="arrow-right">&rarr;</span>
+          </a>
+        </div>
+        {/* <div className="contact__form-container flex">
           <form
             action="#"
             className="contact__form"
@@ -77,7 +82,7 @@ const Contact = () => {
             </div>
             <button>Submit</button>
           </form>
-        </div>
+        </div> */}
       </div>
     </section>
   )

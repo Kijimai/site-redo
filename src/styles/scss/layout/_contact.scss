@@ -44,6 +44,28 @@
     font-weight: 600;
     font-family: var(--primary-font);
   }
+
+  &__link-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    font-family: var(--sub-font);
+    color: hsl(var(--color-text));
+    border: 0.2rem solid hsl(var(--color-primary));
+    border-radius: 0.6rem;
+
+    &:hover .arrow-right {
+      margin-left: 1rem;
+      transition: 0.3s ease margin-left;
+    }
+  }
 }
 
 .form-group {

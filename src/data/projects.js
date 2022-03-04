@@ -15,7 +15,7 @@ const Projs = [
     liveUrl: "https://loopstudios-react-kijimai.netlify.app/",
     codeUrl: "https://github.com/Kijimai/loopstudios-react",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius ratione ad similique, quibusdam inventore possimus explicabo. Saepe odit aliquam distinctio quis quasi necessitatibus magnam!",
+      "I built the website in order to help solidify my knowledge of working with Sass and css grid as I've struggled to grasp the concepts of Sass . The website was designed by Frontend Mentor and the code was all done by me.",
     stack: ["React", "Sass"],
     imgUrl: MoUPreview,
   },
@@ -24,7 +24,7 @@ const Projs = [
     liveUrl: "https://kijimai.github.io/tip-calculator-app/",
     codeUrl: "https://github.com/Kijimai/tip-calculator-app",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius ratione ad similique, quibusdam inventore possimus explicabo. Saepe odit aliquam distinctio quis quasi necessitatibus magnam!",
+      "This web app helped me to better understand Javascript fundamentals as well as getting better practice using flexbox and css grid for laying out the page. The design was created by Frontend Mentor and all coded by me.",
     stack: ["HTML", "CSS", "Javascript"],
     imgUrl: MoUPreview,
   },
