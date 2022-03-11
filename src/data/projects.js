@@ -1,4 +1,7 @@
 import MoUPreview from "../images/MoUPreview.jpg"
+import loopPreview from "../images/loopstudios_preview.jpg"
+import devFinderPreview from "../images/devfinder_preview.jpg"
+import splitterPreview from "../images/splitter_preview.jpg"
 
 const Projs = [
   {
@@ -8,7 +11,7 @@ const Projs = [
     description:
       "A minimalistic web app built in React that utilizes the github API to pull a user's basic information like displaying repository count and follower counts. I've also integrated a dark / light mode that saves the user's preferences on the next visit. The original design was created by Frontend Mentor and all of the coding was done by me.",
     stack: ["React", "Sass", "Axios"],
-    imgUrl: MoUPreview,
+    imgUrl: devFinderPreview,
   },
   {
     title: "LoopStudios Landing Page",
@@ -17,7 +20,7 @@ const Projs = [
     description:
       "I built the website in order to help solidify my knowledge of working with Sass and css grid as I've struggled to grasp the concepts of Sass . The website was designed by Frontend Mentor and the code was all done by me.",
     stack: ["React", "Sass"],
-    imgUrl: MoUPreview,
+    imgUrl: loopPreview,
   },
   {
     title: "Splitter",
@@ -26,7 +29,7 @@ const Projs = [
     description:
       "This web app helped me to better understand Javascript fundamentals as well as getting better practice using flexbox and css grid for laying out the page. The design was created by Frontend Mentor and all coded by me.",
     stack: ["HTML", "CSS", "Javascript"],
-    imgUrl: MoUPreview,
+    imgUrl: splitterPreview,
   },
   {
     title: "Masters of Unlocking",
