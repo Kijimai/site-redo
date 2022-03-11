@@ -25,13 +25,13 @@ const Contact = () => {
     return
   }
 
-  const handleContactChange = (e) => {
-    const { value } = e.target
-    setMailMessage((previousValue) => {
-      return { ...previousValue, value }
-    })
-    console.log(mailMessage)
-  }
+  // const handleContactChange = (e) => {
+  //   const { value } = e.target
+  //   setMailMessage((previousValue) => {
+  //     return { ...previousValue, value }
+  //   })
+  //   console.log(mailMessage)
+  // }
 
   return (
     <section className="section contact" id="contact">
