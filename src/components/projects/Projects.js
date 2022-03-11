@@ -27,10 +27,20 @@ const Projects = () => {
                   ))}
                 </ul>
                 <div className="project__links">
-                  <a className="project__link" href={project.liveUrl}>
+                  <a
+                    className="project__link"
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer noopenner"
+                  >
                     Live Site
                   </a>
-                  <a className="project__link" href={project.codeUrl}>
+                  <a
+                    className="project__link"
+                    href={project.codeUrl}
+                    target="_blank"
+                    rel="noreferrer noopenner"
+                  >
                     View Code
                   </a>
                 </div>
