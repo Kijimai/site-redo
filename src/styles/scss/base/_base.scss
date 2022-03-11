@@ -52,7 +52,15 @@ h6 {
 }
 
 .section {
-  padding-top: 8rem;
+  padding-top: 3rem;
+
+  @include responsive(400) {
+    padding-top: 4rem;
+  }
+
+  @include responsive(900) {
+    padding-top: 8rem;
+  }
 }
 
 .inner-container {

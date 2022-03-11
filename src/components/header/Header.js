@@ -29,7 +29,11 @@ const Header = () => {
           sizes="(max-width: 900px) 150px, 250px"
           alt="self portrait"
         /> */}
-        <img className="self-portrait" src={headerItem1} alt="..." />
+        <img
+          className="self-portrait"
+          src={headerItem1}
+          alt="header self portrait"
+        />
       </div>
     </header>
   )

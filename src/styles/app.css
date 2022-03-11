@@ -88,7 +88,17 @@ h6 {
 }
 
 .section {
-  padding-top: 8rem;
+  padding-top: 3rem;
+}
+@media only screen and (min-width: 25em) {
+  .section {
+    padding-top: 4rem;
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .section {
+    padding-top: 8rem;
+  }
 }
 
 .inner-container {
@@ -502,11 +512,17 @@ textarea {
 }
 .skills__description {
   margin: 0 auto;
+  padding: 0 1rem;
   max-width: 40rem;
   text-align: center;
   font-size: 2rem;
   color: hsl(var(--color-text));
   font-family: var(--sub-font);
+}
+@media only screen and (min-width: 25em) {
+  .skills__description {
+    padding: 0;
+  }
 }
 .skills .inner-container {
   position: relative;
