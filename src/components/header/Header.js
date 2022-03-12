@@ -25,7 +25,7 @@ const Header = () => {
       <div className="header__right">
         <img
           className="self-portrait"
-          srcSet={`${ProfileImg} 250w, ${ProfileImgSmall} 150w`}
+          srcSet={`${ProfileImg} 225w, ${ProfileImgSmall} 150w`}
           sizes="(max-width: 900px) 150px, 250px"
           alt="self portrait"
         />

@@ -373,6 +373,7 @@ textarea {
   text-decoration: underline;
 }
 .header__left a .down-arrow {
+  display: block;
   animation: floatRepeat 1s ease infinite;
 }
 .header__left p {
