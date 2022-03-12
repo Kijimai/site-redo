@@ -23,17 +23,17 @@ const Header = () => {
         </a>
       </div>
       <div className="header__right">
-        {/* <img
+        <img
           className="self-portrait"
           srcSet={`${ProfileImg} 250w, ${ProfileImgSmall} 150w`}
           sizes="(max-width: 900px) 150px, 250px"
           alt="self portrait"
-        /> */}
-        <img
+        />
+        {/* <img
           className="self-portrait"
           src={headerItem1}
           alt="header self portrait"
-        />
+        /> */}
       </div>
     </header>
   )
