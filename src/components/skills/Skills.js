@@ -14,12 +14,14 @@ const Skills = () => {
       <div className="inner-container">
         <div className="skills__container">
           <FaCode />
-          <h3>Languages</h3>
+          <h3>Languages & Frameworks</h3>
           <ul className="skills__list">
             <li className="skills__skill">HTML5</li>
             <li className="skills__skill">CSS/SCSS</li>
             <li className="skills__skill">Javascript ES6+</li>
             <li className="skills__skill">ReactJS</li>
+            <li className="skills__skill">Node / Express</li>
+            <li className="skills__skill">Mongoose</li>
           </ul>
         </div>
         <div aria-hidden="true" className="divider"></div>
