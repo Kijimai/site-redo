@@ -1,8 +1,12 @@
 .footer {
   font-family: var(--sub-font);
-  padding: 8rem 0;
+  padding: 6rem 0 4rem;
   background-color: hsl(var(--color-black));
   color: hsl(var(--color-white));
+
+  @include responsive(768) {
+    padding: 8rem 0;
+  }
 
   .inner-container {
     margin-bottom: 0;

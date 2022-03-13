@@ -374,6 +374,7 @@ textarea {
 }
 .header__left a .down-arrow {
   display: block;
+  margin-left: 6rem;
   animation: floatRepeat 1s ease infinite;
 }
 .header__left p {
@@ -621,6 +622,9 @@ textarea {
   transform: translateY(-0.05rem);
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
 }
+.project__img-container, .project__contents {
+  flex: 1 0 100%;
+}
 .project__img {
   display: block;
   width: 100%;
@@ -635,18 +639,11 @@ textarea {
 .project__contents {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 1rem;
   padding: 2rem;
-  flex: 1;
-}
-@media only screen and (min-width: 56.25em) {
-  .project__contents {
-    gap: 2rem;
-  }
+  gap: 1rem;
 }
 .project__contents > * {
-  flex: 1 1 50%;
+  display: block;
 }
 .project__title, .project__description {
   color: hsl(var(--color-text));
@@ -674,6 +671,7 @@ textarea {
 }
 .project__links {
   display: flex;
+  justify-self: flex-end;
   justify-content: space-around;
   gap: 0.5rem;
   width: 100%;
@@ -821,9 +819,14 @@ textarea {
 
 .footer {
   font-family: var(--sub-font);
-  padding: 8rem 0;
+  padding: 6rem 0 4rem;
   background-color: hsl(var(--color-black));
   color: hsl(var(--color-white));
+}
+@media only screen and (min-width: 37.5em) {
+  .footer {
+    padding: 8rem 0;
+  }
 }
 .footer .inner-container {
   margin-bottom: 0;

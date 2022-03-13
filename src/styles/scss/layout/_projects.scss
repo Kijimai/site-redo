@@ -34,6 +34,11 @@
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
   }
 
+  &__img-container,
+  &__contents {
+    flex: 1 0 100%;
+  }
+
   &__img {
     display: block;
     width: 100%;
@@ -47,17 +52,11 @@
   &__contents {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 1rem;
     padding: 2rem;
-    flex: 1;
-
-    @include responsive(900) {
-      gap: 2rem;
-    }
+    gap: 1rem;
 
     & > * {
-      flex: 1 1 50%;
+      display: block;
     }
   }
 
@@ -93,6 +92,7 @@
 
   &__links {
     display: flex;
+    justify-self: flex-end;
     justify-content: space-around;
     gap: 0.5rem;
     width: 100%;
