@@ -618,7 +618,7 @@ textarea {
   border-radius: 0.5rem;
   transition: 0.2s ease transform, 0.3s ease box-shadow;
 }
-.project:hover {
+.project:hover, .project:focus {
   transform: translateY(-0.05rem);
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
 }
@@ -641,9 +641,6 @@ textarea {
   flex-direction: column;
   padding: 2rem;
   gap: 1rem;
-}
-.project__contents > * {
-  display: block;
 }
 .project__title, .project__description {
   color: hsl(var(--color-text));
@@ -671,10 +668,7 @@ textarea {
 }
 .project__links {
   display: flex;
-  justify-self: flex-end;
-  justify-content: space-around;
   gap: 0.5rem;
-  width: 100%;
 }
 .project__link {
   text-align: center;

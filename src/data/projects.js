@@ -9,7 +9,7 @@ const Projs = [
     liveUrl: "https://github-user-searcher-kijimai.netlify.app/",
     codeUrl: "https://github.com/Kijimai/fem-github-search",
     description:
-      "A minimalistic web app built in React that utilizes the github API to pull a user's basic information like displaying repository count and follower counts. I've also integrated a dark / light mode that saves the user's preferences on the next visit. The original design was created by Frontend Mentor and all of the coding was done by me.",
+      "A minimalistic web app built in React that utilizes the github API to pull a user's basic information like displaying repository count and follower counts. The original design was created by Frontend Mentor and all of the coding was done by me.",
     stack: ["React", "Sass", "Axios"],
     imgUrl: devFinderPreview,
   },

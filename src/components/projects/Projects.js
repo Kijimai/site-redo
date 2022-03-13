@@ -8,7 +8,7 @@ const Projects = () => {
       <div className="inner-container">
         {projects.map((project, index) => {
           return (
-            <article key={index} className="project">
+            <article key={index} className="project" tabindex="0">
               <div className="project__img-container">
                 <img
                   src={project.imgUrl}

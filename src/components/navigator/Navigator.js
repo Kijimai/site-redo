@@ -15,6 +15,7 @@ const Navigator = () => {
         <NavBurger />
       </div>
       <button
+        tabIndex="1"
         aria-label="theme toggle button"
         className={`navigator__toggle-btn`}
         onClick={toggleTheme}

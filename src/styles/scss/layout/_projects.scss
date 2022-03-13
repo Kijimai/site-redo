@@ -29,7 +29,8 @@
   border-radius: 0.5rem;
   transition: 0.2s ease transform, 0.3s ease box-shadow;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translateY(-0.05rem);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
   }
@@ -55,9 +56,9 @@
     padding: 2rem;
     gap: 1rem;
 
-    & > * {
-      display: block;
-    }
+    // & > * {
+    //   display: block;
+    // }
   }
 
   &__title,
@@ -92,10 +93,10 @@
 
   &__links {
     display: flex;
-    justify-self: flex-end;
-    justify-content: space-around;
+    // justify-self: flex-end;
+    // justify-content: space-around;
     gap: 0.5rem;
-    width: 100%;
+    // width: 100%;
   }
 
   &__link {

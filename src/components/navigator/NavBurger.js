@@ -4,7 +4,8 @@ const NavBurger = () => {
   const { handleNav, navActive } = useGlobalContext()
   return (
     <button
-      aria-label="close button"
+      tabIndex="0"
+      aria-label="navigator button"
       onClick={handleNav}
       className={`navigator__btn hamburger hamburger--elastic ${
         navActive && "is-active"
