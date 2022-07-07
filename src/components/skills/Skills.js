@@ -1,6 +1,29 @@
 import React from "react"
 import { FaCode, FaBookOpen } from "react-icons/fa"
 
+const lnf = [
+  "HTML5",
+  "CSS/SCSS",
+  "Javascript ES6+",
+  "ReactJS",
+  "Node / Express",
+  "Mongoose",
+  "Python / Flask",
+  "C# / .NET 6",
+]
+
+const devTools = [
+  "NPM",
+  "Git/Github",
+  "Postman",
+  "Heroku",
+  "Netlify",
+  "AWS",
+  "Figma/Photoshop",
+  "Visual Studio Code",
+  "MySQL Workbench",
+]
+
 const Skills = () => {
   return (
     <section className="section skills" id="skills">
@@ -16,12 +39,13 @@ const Skills = () => {
           <FaCode />
           <h3>Languages & Frameworks</h3>
           <ul className="skills__list">
-            <li className="skills__skill">HTML5</li>
-            <li className="skills__skill">CSS/SCSS</li>
-            <li className="skills__skill">Javascript ES6+</li>
-            <li className="skills__skill">ReactJS</li>
-            <li className="skills__skill">Node / Express</li>
-            <li className="skills__skill">Mongoose</li>
+            {lnf.map((skill, index) => {
+              return (
+                <li key={index} className="skills_skill">
+                  {skill}
+                </li>
+              )
+            })}
           </ul>
         </div>
         <div aria-hidden="true" className="divider"></div>
@@ -29,12 +53,13 @@ const Skills = () => {
           <FaBookOpen />
           <h3>Dev Tools</h3>
           <ul className="skills__list">
-            <li className="skills__skill">NPM</li>
-            <li className="skills__skill">Git/Github</li>
-            <li className="skills__skill">Postman</li>
-            <li className="skills__skill">Codepen/Codesandbox</li>
-            <li className="skills__skill">Figma/Photoshop</li>
-            <li className="skills__skill">Visual Studio Code</li>
+            {devTools.map((tool, index) => {
+              return (
+                <li key={index} className="skills__skill">
+                  {tool}
+                </li>
+              )
+            })}
           </ul>
         </div>
       </div>
