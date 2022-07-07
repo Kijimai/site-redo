@@ -4,6 +4,55 @@ import projects from "../../data/projects"
 const Projects = () => {
   return (
     <section className="section section-projects projects" id="projects">
+      <h2 className="projects__header">Featured Project</h2>
+      <div className="inner-container">
+        <article className="project">
+          <div className="project__img-container">
+            <img
+              style={{ filter: "blur(3px)" }}
+              src="https://www.flexx.co/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png"
+              alt="Not found"
+              className="project__img"
+            />
+          </div>
+          <div className="project__contents">
+            <h2 className="project__title">Design Deliver</h2>
+            <p style={{ color: "white", fontFamily: "sans-serif" }}>
+              (Work in Progress)
+            </p>
+            <p className="project__description">
+              Design Deliver is a full-stack MERN application made for digital
+              artists and prospective employers to find one another easily.
+            </p>
+            <ul className="project__tech-stacks">
+              <li className="stack">Mongoose/MongoDB</li>
+              <li className="stack">Express</li>
+              <li className="stack">React</li>
+              <li className="stack">Node</li>
+            </ul>
+            <div className="project__links">
+              <button
+                style={{ textDecoration: "line-through", border: "0" }}
+                className="project__link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopenner"
+                disabled
+              >
+                Live Site
+              </button>
+              <a
+                className="project__link"
+                href="https://github.com/Kijimai/design-deliver-mern"
+                target="_blank"
+                rel="noreferrer noopenner"
+              >
+                View Code
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
       <h2 className="projects__header">Projects</h2>
       <div className="inner-container">
         {projects.map((project, index) => {
