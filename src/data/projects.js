@@ -3,6 +3,8 @@ import loopPreview from "../images/loopstudios_preview.jpg"
 import devFinderPreview from "../images/devfinder_preview.jpg"
 import splitterPreview from "../images/splitter_preview.jpg"
 
+
+
 const Projs = [
   {
     title: "Github User Search",

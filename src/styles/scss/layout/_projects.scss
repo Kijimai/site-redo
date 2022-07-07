@@ -1,5 +1,11 @@
 .projects {
   .inner-container {
+    &.featured-project-container {
+      display: block;
+      max-width: 40rem;
+      margin-bottom: 6rem;
+    }
+
     max-width: 80rem;
     position: relative;
     margin: 0 auto;
@@ -28,6 +34,10 @@
   background-color: hsl(var(--container-bg));
   border-radius: 0.5rem;
   transition: 0.2s ease transform, 0.3s ease box-shadow;
+
+  &.featured-project {
+    margin: 0 auto;
+  }
 
   &:hover,
   &:focus {

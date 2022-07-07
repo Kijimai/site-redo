@@ -582,6 +582,11 @@ textarea {
   flex-direction: column;
   gap: 2rem;
 }
+.projects .inner-container.featured-project-container {
+  display: block;
+  max-width: 40rem;
+  margin-bottom: 6rem;
+}
 @media only screen and (min-width: 37.5em) {
   .projects .inner-container {
     grid-template-columns: repeat(2, minmax(30rem, 40rem));
@@ -617,6 +622,9 @@ textarea {
   background-color: hsl(var(--container-bg));
   border-radius: 0.5rem;
   transition: 0.2s ease transform, 0.3s ease box-shadow;
+}
+.project.featured-project {
+  margin: 0 auto;
 }
 .project:hover, .project:focus {
   transform: translateY(-0.05rem);

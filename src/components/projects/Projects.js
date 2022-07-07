@@ -5,8 +5,8 @@ const Projects = () => {
   return (
     <section className="section section-projects projects" id="projects">
       <h2 className="projects__header">Featured Project</h2>
-      <div className="inner-container">
-        <article className="project">
+      <div className="inner-container featured-project-container">
+        <article className="featured-project project">
           <div className="project__img-container">
             <img
               style={{ filter: "blur(3px)" }}
@@ -22,7 +22,8 @@ const Projects = () => {
             </p>
             <p className="project__description">
               Design Deliver is a full-stack MERN application made for digital
-              artists and prospective employers to find one another easily.
+              artists and prospective employers to easily find one another for
+              collaboration.
             </p>
             <ul className="project__tech-stacks">
               <li className="stack">Mongoose/MongoDB</li>
