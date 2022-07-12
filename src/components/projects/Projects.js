@@ -44,7 +44,7 @@ const Projects = () => {
               </button>
               <a
                 className="project__link"
-                href="https://github.com/Kijimai/design-deliver-mern"
+                href="https://github.com/Kijimai/dd2-mern"
                 target="_blank"
                 rel="noreferrer noopenner"
               >
