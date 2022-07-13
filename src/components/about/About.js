@@ -18,10 +18,13 @@ const About = () => {
             the chance to be a problem solver with creative solutions. When I'm
             not drawing, I'm turning beautiful designs into websites. Frontend
             development is where I truly thrive.  */}
-            I'm a self taught frontend web developer that enjoys turning
-            beautiful designs into beautiful websites. I also enjoy
-            collaborating with others and sharing my knowledge in order to learn
-            from one another.
+            I used to be an animator who had a slight interest in web
+            development. Over time, it grew to become a passion of mine after
+            learning how to build my own websites from scratch! <br /> In order
+            to transition myself into the tech industry, I taught myself the
+            basics of frontend web development eventually joining and finishing
+            Coding Dojo's intensive bootcamp and becoming a fullstack web
+            developer!
             {/* "I'm a Frontend Web Developer
             building the Front-end of Websites and Web Applications that leads
             to the success of the overall product. Check out some of my work in

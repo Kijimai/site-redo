@@ -12,7 +12,7 @@ const Header = () => {
         <h1>
           <span>My name is</span>John Deen Bucog
         </h1>
-        <p>I'm a Frontend Developer</p>
+        <p>I'm a Fullstack Developer</p>
         <a href="#about">
           Get to know me!
           <IconContext.Provider
