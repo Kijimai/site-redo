@@ -32,23 +32,14 @@ const Projects = () => {
               <li className="stack">Node</li>
             </ul>
             <div className="project__links">
-              <button
-                style={{ textDecoration: "line-through", border: "0" }}
+              <a
                 className="project__link"
-                href="#"
+                href="https://design-deliver.netlify.app/"
                 target="_blank"
                 rel="noreferrer noopenner"
                 disabled
               >
                 Live Site
-              </button>
-              <a
-                className="project__link"
-                href="https://github.com/Kijimai/dd2-mern"
-                target="_blank"
-                rel="noreferrer noopenner"
-              >
-                View Code
               </a>
             </div>
           </div>
