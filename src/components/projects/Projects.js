@@ -23,7 +23,9 @@ const Projects = () => {
             <p className="project__description">
               Design Deliver is a full-stack MERN application made for digital
               artists and prospective employers to easily find one another for
-              collaboration.
+              collaboration. The site's frontend is deployed through Netlify and
+              the backend is deployed through Heroku. Both parts utilize
+              continuous integration via Github and Heroku.
             </p>
             <ul className="project__tech-stacks">
               <li className="stack">Mongoose/MongoDB</li>
