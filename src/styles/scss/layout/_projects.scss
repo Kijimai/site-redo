@@ -128,3 +128,21 @@
     }
   }
 }
+
+.temporary-placeholder {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  background-color: lightgreen;
+
+  p {
+    color: rgb(41, 41, 41);
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2rem;
+    font-family: var(--primary-font);
+  }
+}
