@@ -618,6 +618,8 @@ textarea {
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   background-color: hsl(var(--container-bg));
   border-radius: 0.5rem;
@@ -629,9 +631,6 @@ textarea {
 .project:hover, .project:focus {
   transform: translateY(-0.05rem);
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
-}
-.project__img-container, .project__contents {
-  flex: 1 0 100%;
 }
 .project__img {
   display: block;
@@ -649,16 +648,21 @@ textarea {
   flex-direction: column;
   padding: 2rem;
   gap: 1rem;
+  flex: 1;
 }
 .project__title, .project__description {
   color: hsl(var(--color-text));
 }
 .project__title {
+  line-height: 2.4rem;
   font-size: 2rem;
 }
 .project__description {
   font-size: 1.4rem;
   font-family: var(--sub-font);
+}
+.project__tech-stacks {
+  margin-top: auto;
 }
 .project__tech-stacks {
   display: flex;

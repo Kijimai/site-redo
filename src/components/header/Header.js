@@ -3,7 +3,7 @@ import ProfileImg from "../../images/Profile-Image.png"
 import ProfileImgSmall from "../../images/Profile-Image-sm.png"
 import { FaHandPointer, FaAngleDown } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
-import headerItem1 from "../../images/Asset-1.svg"
+// import headerItem1 from "../../images/Asset-1.svg"
 const Header = () => {
   return (
     <header className="header">
@@ -12,7 +12,7 @@ const Header = () => {
         <h1>
           <span>My name is</span>John Deen Bucog
         </h1>
-        <p>I'm a Fullstack Developer</p>
+        <p>I'm a Web Developer</p>
         <a href="#about">
           Get to know me!
           <IconContext.Provider

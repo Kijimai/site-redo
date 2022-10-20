@@ -2,10 +2,28 @@ import MoUPreview from "../images/MoUPreview.jpg"
 import loopPreview from "../images/loopstudios_preview.jpg"
 import devFinderPreview from "../images/devfinder_preview.jpg"
 import splitterPreview from "../images/splitter_preview.jpg"
-
-
+import adviceGenPreview from "../images/advice-gen-preview.png"
+import interactivePreview from "../images/interactive-rating-preview.png"
 
 const Projs = [
+  {
+    title: "Advice Generator",
+    liveUrl: "https://advice-gen-reactjs.netlify.app/",
+    codeUrl: "https://github.com/Kijimai/fem-advice-react",
+    description:
+      "A standalone component app that retrieves random advice from Advice Slip API. Sure to give the user a useful piece of advice!",
+    stack: ["React", "Sass", "Axios"],
+    imgUrl: adviceGenPreview,
+  },
+  {
+    title: "Interactive Rating Component",
+    liveUrl: "https://interactive-rating-component-reactjs.netlify.app/",
+    codeUrl: "https://github.com/Kijimai/fem-interactive-react",
+    description:
+      "A simple reusable component that logs the user's chosen rating for any particular product or service. It uses react's state management to temporarily store user input.",
+    stack: ["React", "Sass"],
+    imgUrl: interactivePreview,
+  },
   {
     title: "Github User Search",
     liveUrl: "https://github-user-searcher-kijimai.netlify.app/",
