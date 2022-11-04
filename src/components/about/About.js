@@ -14,14 +14,30 @@ const About = () => {
         </div>
         <div className="about__container">
           <p className="about__description">
-            I used to be an animator who had a slight interest in web
-            development. Over time, it grew to become a passion of mine after
-            learning how to build my own websites from scratch! <br /> In order
-            to transition myself into the tech industry, I taught myself the
-            basics of frontend web development eventually joining and finishing
-            Coding Dojo's intensive bootcamp and becoming a web
-            developer!
+            I am a former animator turned web developer and I love making
+            websites.
           </p>
+          <p className="about__description">
+            I also graduated from Coding Dojo's fullstack web developer program
+            earning the highest honors in the MERN stack and C# / .NET6.
+          </p>
+          <p className="about__description">
+            I am looking for my first role as a junior developer where I can
+            learn, grow and contribute to the company. If you are interested in
+            working with me, feel free to
+            <b>
+              &nbsp;
+              <a className="about__contact-link" href="#contact">
+                <u>contact</u>
+              </a>
+              &nbsp;
+            </b>
+            me!
+          </p>
+          <br />
+          {/* <a href="mailto:jdbucog@yahoo.com" className="about__contact-link">
+            Contact
+          </a> */}
         </div>
       </div>
     </section>

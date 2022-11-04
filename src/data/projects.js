@@ -4,8 +4,19 @@ import devFinderPreview from "../images/devfinder_preview.jpg"
 import splitterPreview from "../images/splitter_preview.jpg"
 import adviceGenPreview from "../images/advice-gen-preview.png"
 import interactivePreview from "../images/interactive-rating-preview.png"
+import rpsPreview from "../images/rps-preview.png"
+import expensesPreview from "../images/expenses-preview.png"
 
 const Projs = [
+  {
+    title: "Expense Chart Component",
+    liveUrl: "https://expenses-react-fem.netlify.app/",
+    codeUrl: "https://github.com/Kijimai/expenses-chart-react-vite",
+    description:
+      "A reusable react component that dynamically display a bar graph based on one week's expenditures. Built with ViteJS and React with Styled Components.",
+    stack: ["React", "Styled Components"],
+    imgUrl: expensesPreview,
+  },
   {
     title: "Advice Generator",
     liveUrl: "https://advice-gen-reactjs.netlify.app/",
@@ -32,6 +43,15 @@ const Projs = [
       "A minimalistic web app built in React that utilizes the github API to pull a user's basic information like displaying repository count and follower counts. The original design was created by Frontend Mentor and all of the coding was done by me.",
     stack: ["React", "Sass", "Axios"],
     imgUrl: devFinderPreview,
+  },
+  {
+    title: "Extreme Rock Paper Scissors",
+    liveUrl: "https://kijimai.github.io/extreme-rock-paper-scissors/",
+    codeUrl: "https://github.com/Kijimai/extreme-rock-paper-scissors",
+    description:
+      "A short and fun rock and paper scissors game built in HTML, CSS and Vanilla Javascript. The player can choose from a choice of 6 diverse characters and a secret hidden character! The theme was heavily influenced by the Street Fighter series.",
+    stack: ["HTML", "CSS", "Javascript"],
+    imgUrl: rpsPreview,
   },
   {
     title: "LoopStudios Landing Page",

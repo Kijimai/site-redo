@@ -63,10 +63,6 @@
     padding: 2rem;
     gap: 1rem;
     flex: 1;
-
-    // & > * {
-    //   display: block;
-    // }
   }
 
   &__title,
@@ -147,5 +143,6 @@
     transform: translate(-50%, -50%);
     font-size: 2.2rem;
     font-family: var(--primary-font);
+    white-space: nowrap;
   }
 }
