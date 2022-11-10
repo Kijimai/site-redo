@@ -4,16 +4,10 @@ import projects from "../../data/projects"
 const Projects = () => {
   return (
     <section className="section section-projects projects" id="projects">
-      <h2 className="projects__header">Featured Project</h2>
+      <h2 className="projects__header">Featured Projects</h2>
       <div className="inner-container featured-project-container">
         <article className="featured-project project">
           <div className="project__img-container">
-            {/* <img
-              style={{ filter: "blur(3px)" }}
-              src="https://www.flexx.co/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png"
-              alt="Not found"
-              className="project__img"
-            /> */}
             <div className="temporary-placeholder">
               <p>Work in Progress</p>
             </div>

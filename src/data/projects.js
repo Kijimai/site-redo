@@ -6,14 +6,24 @@ import adviceGenPreview from "../images/advice-gen-preview.png"
 import interactivePreview from "../images/interactive-rating-preview.png"
 import rpsPreview from "../images/rps-preview.png"
 import expensesPreview from "../images/expenses-preview.png"
+import ecommercePreview from "../images/ecommerce-preview.png"
 
 const Projs = [
+  {
+    title: "Ecommerce Product Page",
+    liveUrl: "https://ecommerce-reactjs-vite.netlify.app/",
+    codeUrl: "https://github.com/Kijimai/ecommerce-vite-react",
+    description:
+      "Deployed with Netlify, this app was created using ViteJS as the build tool with React as the template. Styled-components was utilized to create highly reusable components that dynamically display information passed down as props.",
+    stack: ["ReactJS", "ViteJs", "Styled Components"],
+    imgUrl: ecommercePreview,
+  },
   {
     title: "Expense Chart Component",
     liveUrl: "https://expenses-react-fem.netlify.app/",
     codeUrl: "https://github.com/Kijimai/expenses-chart-react-vite",
     description:
-      "A reusable react component that dynamically display a bar graph based on one week's expenditures. Built with ViteJS and React with Styled Components.",
+      "A reusable react component that dynamically displays a bar graph based on one week's expenditures. Built with ViteJS and React with Styled Components.",
     stack: ["React", "Styled Components"],
     imgUrl: expensesPreview,
   },
