@@ -3,7 +3,7 @@ import Header from "../header/Header"
 import About from "../about/About"
 import Skills from "../skills/Skills"
 import Projects from "../projects/Projects"
-import ContactForm from "../contact/ContactForm"
+import Contact from "../contact/Contact"
 import Footer from "../footer/Footer"
 import Sidebars from "../sidebars/Sidebars"
 
@@ -15,6 +15,7 @@ const Main = () => {
       <About />
       <Skills />
       <Projects />
+      <Contact />
       <Footer />
       <Sidebars />
     </main>

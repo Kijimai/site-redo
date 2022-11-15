@@ -733,6 +733,129 @@ textarea {
   white-space: nowrap;
 }
 
+.contact__header {
+  position: relative;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  text-align: center;
+  color: hsl(var(--color-text));
+}
+.contact__header::after {
+  content: "";
+  height: 0.5rem;
+  width: 8rem;
+  margin: 0 auto;
+  background-color: hsl(var(--color-text));
+  position: absolute;
+  bottom: -0.8rem;
+  left: 0;
+  right: 0;
+  border-radius: 1rem;
+}
+.contact .inner-container {
+  max-width: 80rem;
+}
+.contact__description {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: var(--sub-font);
+  color: hsl(var(--color-text));
+  margin-bottom: 1.4rem;
+}
+.contact__form-container {
+  border-radius: 0.5rem;
+  background-color: hsl(var(--color-primary));
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 37.5em) {
+  .contact__form-container {
+    width: 80%;
+  }
+}
+.contact__form {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .contact__form {
+    padding: 3rem 4rem;
+  }
+}
+.contact button {
+  width: 100%;
+  cursor: pointer;
+  padding: 2rem 0;
+  font-weight: 600;
+  font-family: var(--primary-font);
+}
+.contact__link-container {
+  display: flex;
+  justify-content: center;
+}
+.contact__link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  font-family: var(--sub-font);
+  color: hsl(var(--color-text));
+  border: 0.2rem solid hsl(var(--color-primary));
+  border-radius: 0.6rem;
+}
+.contact__link:hover {
+  background-color: hsl(var(--color-primary));
+}
+.contact__link:hover .arrow-right {
+  margin-left: 1rem;
+  transition: 0.3s ease margin-left;
+}
+
+.form-group {
+  color: hsl(var(--color-text));
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .form-group {
+    margin-bottom: 3rem;
+  }
+}
+.form-group > * {
+  display: block;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+}
+.form-group input {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  font-family: var(--sub-font);
+}
+@media only screen and (min-width: 37.5em) {
+  .form-group input {
+    padding: 1.4rem 0.8rem;
+  }
+}
+.form-group input[type=text], .form-group input[type=email] {
+  font-size: 1.6rem;
+}
+.form-group label {
+  font-size: 1.6rem;
+  font-family: var(--sub-font);
+  margin-bottom: 0.5rem;
+}
+.form-group textarea {
+  font-size: 1.6rem;
+  font-family: var(--sub-font);
+  width: 100%;
+  height: 20rem;
+  padding: 1rem;
+}
+
 .footer {
   font-family: var(--sub-font);
   padding: 6rem 0 4rem;
