@@ -25,7 +25,7 @@ const AppProvider = ({ children }) => {
   const [navActive, setNavActive] = useState(false)
   const [windowSize, setWindowSize] = useState(window.innerWidth)
   const [scrollHeight, setScrollHeight] = useState(0)
-  const [title, setTitle] = useState(titlesArr[0])
+  const [randomIdx, setRandomIdx] = useState(0)
 
   const toggleTheme = () => {
     setTheme((previousTheme) => {
@@ -41,12 +41,11 @@ const AppProvider = ({ children }) => {
   }
 
   function cycleTitles() {
-    const randomNum = Math.floor(Math.random() * titlesArr.length)
-
-    setTitle((previousTitle) => {
-      console.log(previousTitle)
-      return titlesArr[randomNum]
-    })
+    let randomNum = Math.floor(Math.random() * titlesArr.length)
+    while (randomNum === randomIdx) {
+      randomNum = Math.floor(Math.random() * titlesArr.length)
+    }
+    setRandomIdx(randomNum)
   }
 
   const handleNav = () => {
@@ -106,8 +105,9 @@ const AppProvider = ({ children }) => {
         windowSize,
         scrollToTop,
         cycleTitles,
-        title,
+        titlesArr,
         scrollHeight,
+        randomIdx,
       }}
     >
       {children}

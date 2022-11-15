@@ -3,8 +3,12 @@ import ProfileImg from "../../images/Profile-Image.png"
 import ProfileImgSmall from "../../images/Profile-Image-sm.png"
 import { FaHandPointer, FaAngleDown } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
-// import headerItem1 from "../../images/Asset-1.svg"
+import { useGlobalContext } from "../../utils/context"
 const Header = () => {
+  const { randomIdx, titlesArr, cycleTitles } = useGlobalContext()
+
+
+
   return (
     <header className="header">
       <div className="header__left">
@@ -12,7 +16,9 @@ const Header = () => {
         <h1>
           <span>My name is</span>John Deen Bucog
         </h1>
-        <p>I'm a Web Developer</p>
+        <p>
+          I'm a <button className="header__title-btn" onClick={cycleTitles}>{titlesArr[randomIdx]}</button>
+        </p>
         <a href="#about">
           Get to know me!
           <IconContext.Provider
